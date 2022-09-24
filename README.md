@@ -78,7 +78,7 @@ npm run build: Compiles and minifies assets
 - [react-three-fiber](https://github.com/pmndrs/react-three-fiber)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [ESLint](https://eslint.org/)
-- [ViteJS] (https://vitejs.dev/guide/why.html)
+- [ViteJS](https://vitejs.dev/guide/why.html)
 - [JSX](https://reactjs.org/docs/introducing-jsx.html)
 
 ---
