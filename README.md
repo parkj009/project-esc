@@ -1,6 +1,9 @@
 # Project ESC
 
----
+![GitHub last commit](https://img.shields.io/github/last-commit/parkj009/project-esc?logo=Github&style=plastic)
+![Website](https://img.shields.io/website?down_message=offline&style=plastic&up_color=green&url=https%3A%2F%2Fprojectesc.io)
+![GitHub](https://img.shields.io/github/license/parkj009/project-esc?style=plastic)
+![GitHub repo size](https://img.shields.io/github/repo-size/parkj009/project-esc?style=plastic)
 
 ## Introduction
 
