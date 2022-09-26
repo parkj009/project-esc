@@ -58,7 +58,7 @@ npm run serve: Compiles and hot-reloads for development
 
 ## Testing
 
-To be Added (identify what to use for unit, load, and end-to-end testing)
+To be Added (identify what to use for unit, load, and end-to-end testing).
 
 ---
 
