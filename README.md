@@ -13,12 +13,12 @@
 
 ## Table of contents
 
-1. [Overview](#markdown-header-overview)
-2. [Getting Started](#markdown-header-getting-started)
-3. [Testing](#markdown-header-testing)
-4. [Production](#markdown-header-production)
-5. [References](#markdown-header-references)
-6. [Credits](#markdown-header-credits)
+1. [Overview](#overview)
+2. [Getting Started](#getting-started)
+3. [Testing](#testing)
+4. [Production](#production)
+5. [References](#references)
+6. [Credits](#credits)
 
 ---
 
