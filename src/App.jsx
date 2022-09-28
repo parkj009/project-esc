@@ -1,36 +1,13 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
-import Footer from "./components/ui/footer";
-import NavBar from "./components/ui/navBar";
+// import React from "react";
+import Header from "./components/ui/Header";
+// import Footer from "./components/ui/footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
-      <NavBar />
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="text-3x1 font-bold underline">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <Footer />
+      <Header />
+
+      {/* <Footer /> */}
     </div>
   );
 }
