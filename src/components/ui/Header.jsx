@@ -8,7 +8,7 @@ import {
 import { NavLink } from "react-router-dom";
 
 const navigation = [
-  { name: "Home", link: "/", current: true },
+  { name: "Home", link: "/", current: false },
   { name: "Rooms", link: "/rooms", current: false },
   { name: "Rankings", link: "/rankings", current: false },
   { name: "Tutorial", link: "/tutorial", current: false },
@@ -56,25 +56,24 @@ function Header() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <ul
+                      <NavLink
+                        to={item.link}
                         key={item.name}
-                        className={classNames(
-                          item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "px-3 py-2 rounded-md text-sm font-medium"
-                        )}
+                        className={({ isActive }) =>
+                          [
+                            isActive
+                              ? "bg-gray-900 text-white"
+                              : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                            "px-3 py-2 rounded-md text-sm font-medium",
+                          ]
+                            .filter(Boolean)
+                            .join(" ")
+                        }
                         aria-current={item.current ? "page" : undefined}
+                        end
                       >
-                        <NavLink
-                          style={({ isActive }) => {
-                            return isActive ? { color: "red" } : {};
-                          }}
-                          to={item.link}
-                        >
-                          {item.name}
-                        </NavLink>
-                      </ul>
+                        {item.name}
+                      </NavLink>
                     ))}
                   </div>
                 </div>
