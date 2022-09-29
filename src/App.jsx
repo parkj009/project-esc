@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Tutorial from "./pages/Tutorial";
 import Rankings from "./pages/Rankings";
+import Profile from "./pages/Profile";
 import RoomList from "./pages/RoomList";
 import Room from "./pages/Room";
 import NotFound from "./pages/NotFound";
@@ -23,6 +24,7 @@ function App() {
         <Route path="/rankings" element={<Rankings />} />
         <Route path="/tutorial" element={<Tutorial />} />
         <Route path="/about" element={<About />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/rooms">
           <Route index element={<RoomList />} />
           <Route path=":id" element={<Room />} />
