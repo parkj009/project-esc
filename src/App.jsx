@@ -3,7 +3,7 @@ import Header from "./components/ui/Header";
 // import Footer from "./components/ui/footer";
 
 // Pages
-import Home from "./pages/Home";
+import { Home } from "./pages/Home";
 import About from "./pages/About";
 import Tutorial from "./pages/Tutorial";
 import Rankings from "./pages/Rankings";
