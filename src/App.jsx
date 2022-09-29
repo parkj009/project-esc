@@ -1,6 +1,6 @@
 // Components
 import Header from "./components/ui/Header";
-// import Footer from "./components/ui/footer";
+import Footer from "./components/ui/Footer";
 
 // Pages
 import Home from "./pages/Home";
@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Tutorial from "./pages/Tutorial";
 import Rankings from "./pages/Rankings";
 import Profile from "./pages/Profile";
+import Contact from "./pages/Contact";
 import RoomList from "./pages/RoomList";
 import Room from "./pages/Room";
 import NotFound from "./pages/NotFound";
@@ -25,12 +26,14 @@ function App() {
         <Route path="/tutorial" element={<Tutorial />} />
         <Route path="/about" element={<About />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/rooms">
           <Route index element={<RoomList />} />
           <Route path=":id" element={<Room />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </>
   );
 }
