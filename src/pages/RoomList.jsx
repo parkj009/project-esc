@@ -8,7 +8,7 @@ function RoomList() {
       <br />
       <Link to="/rooms/2">Room 2</Link>
       <br />
-      <Link to="/rooms/2">Room 3</Link>
+      <Link to="/rooms/3">Room 3</Link>
     </div>
   );
 }

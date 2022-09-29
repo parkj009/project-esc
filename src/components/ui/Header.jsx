@@ -5,7 +5,7 @@ import {
   UserCircleIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const navigation = [
   { name: "Home", link: "/", current: true },
@@ -66,7 +66,14 @@ function Header() {
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
-                        <Link to={item.link}>{item.name}</Link>
+                        <NavLink
+                          style={({ isActive }) => {
+                            return isActive ? { color: "red" } : {};
+                          }}
+                          to={item.link}
+                        >
+                          {item.name}
+                        </NavLink>
                       </ul>
                     ))}
                   </div>
