@@ -5,6 +5,7 @@ function Room() {
   return (
     <div>
       <h1>Room {id}</h1>
+      <p>test</p>
     </div>
   );
 }
