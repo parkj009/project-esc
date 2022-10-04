@@ -8,7 +8,7 @@ function Footer() {
   ];
 
   return (
-    <div className="absolute inset-x-0 bottom-0 p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+    <div className="absolute inset-x-0 bottom-0 bg-white flex items-center justify-between p-6 dark:bg-gray-800">
       <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
         © 2022 Project ESC. All Rights Reserved.
       </span>
