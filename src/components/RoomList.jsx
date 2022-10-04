@@ -1,27 +1,9 @@
-// import RoomList from "../pages/rooms/RoomList";
+import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 
-function RoomLayout() {
-  const rooms = [
-    {
-      id: 1,
-      name: "Pirate",
-      link: "/rooms/pirateroom",
-      difficulty: "easy",
-    },
-    {
-      id: 2,
-      name: "Casino",
-      link: "/rooms/casinoroom",
-      difficulty: "medium",
-    },
-    {
-      id: 3,
-      name: "Horror",
-      link: "/rooms/horrorroom",
-      difficulty: "hard",
-    },
-  ];
+function RoomList(props) {
+  const rooms = props.rooms;
+  console.log(props, rooms);
   return (
     <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
       {rooms.map((room) => (
@@ -32,11 +14,7 @@ function RoomLayout() {
         >
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">{room.name}</div>
-            <p className="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, Nonea! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
-            </p>
+            <p className="text-gray-700 text-base">{room.blurb}</p>
           </div>
           <div className="px-6 pt-4 pb-2">
             <span
@@ -51,4 +29,8 @@ function RoomLayout() {
   );
 }
 
-export default RoomLayout;
+export default RoomList;
+
+RoomList.propTypes = {
+  rooms: PropTypes.array,
+};
