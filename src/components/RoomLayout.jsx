@@ -1,36 +1,35 @@
+// import RoomList from "../pages/rooms/RoomList";
 import { NavLink } from "react-router-dom";
 
-function RoomList() {
+function RoomLayout() {
   const rooms = [
     {
+      id: 1,
       name: "Pirate",
-      link: "/rooms/pirate",
+      link: "/rooms/pirateroom",
       difficulty: "easy",
-      color: "bg-green",
     },
     {
+      id: 2,
       name: "Casino",
-      link: "/rooms/casino",
+      link: "/rooms/casinoroom",
       difficulty: "medium",
-      color: "yellow",
     },
     {
+      id: 3,
       name: "Horror",
-      link: "/rooms/horror",
+      link: "/rooms/horrorroom",
       difficulty: "hard",
-      color: "red",
     },
   ];
-
   return (
     <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
       {rooms.map((room) => (
         <NavLink
+          key={room.id}
           to={room.link}
-          key={room.name}
           className="rounded overflow-hidden shadow-lg transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"
         >
-          {/* <img src={room.name} /> */}
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">{room.name}</div>
             <p className="text-gray-700 text-base">
@@ -41,7 +40,7 @@ function RoomList() {
           </div>
           <div className="px-6 pt-4 pb-2">
             <span
-              className={`inline-block rounded-full px-3 py-1 ${room.color} text-sm font-semibold text-gray-700 mr-2 mb-2`}
+              className={`inline-block rounded-full px-3 py-1 bg-gray-200 text-sm font-semibold text-gray-700 mr-2 mb-2`}
             >
               {room.difficulty}
             </span>
@@ -52,4 +51,4 @@ function RoomList() {
   );
 }
 
-export default RoomList;
+export default RoomLayout;
