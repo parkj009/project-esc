@@ -1,11 +1,10 @@
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 
-function RoomList(props) {
-  const rooms = props.rooms;
+function RoomList({ rooms, title }) {
   return (
     <>
-      <div className="pt-6 text-center font-bold text-xl">{props.title}</div>
+      <div className="pt-6 text-center font-bold text-xl">{title}</div>
       <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
         {rooms.map((room) => (
           <NavLink
