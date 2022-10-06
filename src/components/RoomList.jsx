@@ -9,8 +9,8 @@ function RoomList({ rooms, title }) {
         {rooms.map((room) => (
           <NavLink
             key={room.id}
-            to={room.link}
-            alt="Sunset in the mountains"
+            to={`/rooms/${room.id}`}
+            alt=""
             className="rounded overflow-hidden shadow-lg transition ease-in-out
             delay-100 hover:-translate-y-1 hover:scale-110 duration-300"
           >
@@ -28,8 +28,8 @@ function RoomList({ rooms, title }) {
                     ? "bg-orange-300"
                     : room.difficulty == "hard"
                     ? "bg-red-300"
-                    : ""
-                } px-3 py-1 bg-gray-200 text-sm font-semibold text-gray-700 mr-2 mb-2`}
+                    : "bg-gray-200"
+                } px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2`}
               >
                 {room.difficulty}
               </span>

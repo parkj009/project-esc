@@ -2,6 +2,7 @@
 import Header from "./components/ui/Header";
 import Footer from "./components/ui/Footer";
 import Rooms from "./pages/Rooms";
+import RoomDetails from "./components/RoomDetails";
 
 // Pages
 import Home from "./pages/Home";
@@ -11,9 +12,6 @@ import Rankings from "./pages/Rankings";
 import Profile from "./pages/Profile";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-
-// Rooms
-// import PirateRoom from "./pages/rooms/PirateRoom";
 
 // External package imports
 import { Routes, Route } from "react-router-dom";
@@ -31,8 +29,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/rooms">
           <Route index element={<Rooms />} />
-          {/* <Route path="/rooms/pirateroom" element={<PirateRoom />} /> */}
-          {/* <Route path=":id" element={<Rooms />} /> */}
+          <Route path=":id" element={<RoomDetails />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
