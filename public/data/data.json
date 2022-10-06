@@ -1,20 +1,22 @@
-[
-  {
-    "id": 1,
-    "name": "Pirate",
-    "blurb": "Escape from the sinking ship!",
-    "difficulty": "easy"
-  },
-  {
-    "id": 2,
-    "name": "Casino",
-    "blurb": "Escape from the casino!",
-    "difficulty": "medium"
-  },
-  {
-    "id": 3,
-    "name": "Horror",
-    "blurb": "Escape from the carnival of terror!",
-    "difficulty": "hard"
-  }
-]
+{
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Pirate",
+      "blurb": "Escape from the sinking ship!",
+      "difficulty": "easy"
+    },
+    {
+      "id": 2,
+      "name": "Casino",
+      "blurb": "Escape from the casino!",
+      "difficulty": "medium"
+    },
+    {
+      "id": 3,
+      "name": "Horror",
+      "blurb": "Escape from the carnival of terror!",
+      "difficulty": "hard"
+    }
+  ]
+}

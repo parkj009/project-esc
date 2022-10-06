@@ -5,7 +5,7 @@ function RoomDetails() {
   const { id } = useParams();
   const { data: room } = useFetch("/data/data.json/");
   // const { data: room, error } = useFetch("http://localhost:3000/rooms/" + id);
-  const filteredRoom = room && room.filter((room) => room.id == id);
+  const filteredRoom = room && room.rooms.filter((room) => room.id == id);
 
   return (
     <>

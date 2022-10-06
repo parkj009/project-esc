@@ -8,7 +8,7 @@ function Rooms() {
     <>
       {error && <div>{error}</div>}
       {rooms && (
-        <RoomList rooms={rooms} title="Select your escape (logo) room:" />
+        <RoomList rooms={rooms.rooms} title="Select your escape (logo) room:" />
       )}
     </>
   );
