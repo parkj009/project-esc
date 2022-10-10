@@ -14,7 +14,7 @@ function RoomList({ rooms, title }) {
             className="rounded overflow-hidden shadow-lg transition ease-in-out
             delay-100 hover:-translate-y-1 hover:scale-110 duration-300"
           >
-            <img className="w-full" src="../src/assets/react.svg" />
+            <img className="w-full" src={room.image} />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">{room.name}</div>
               <p className="text-gray-700 text-base">{room.blurb}</p>
