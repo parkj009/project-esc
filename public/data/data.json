@@ -22,7 +22,7 @@
       "blurb": "Escape from the carnival of terror!",
       "paragraph": "Navigate your way throughout the carnival and escape before you get captured! You have one hour to escape! Use the WASD keys to move and your mouse / spacebar to interact with clues / objects.",
       "difficulty": "hard",
-      "image": "/src/assets/images/horror.jpg"
+      "image": "/src/assets/images/horror.png"
     }
   ]
 }

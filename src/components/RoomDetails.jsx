@@ -16,7 +16,7 @@ function RoomDetails() {
               <div className="px-6 py-4 grid grid-cols-2">
                 <div className="font-bold text-xl mb-2 text-center">
                   <p>{room.name} Room</p>
-                  <img className="object-scale-down h-25" src={room.image} />
+                  <img className="w-full" src={room.image} />
                 </div>
                 <div className="font-bold text-xl mb-2 text-center">
                   <p>Settings:</p>
