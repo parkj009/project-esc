@@ -18,7 +18,10 @@ module.exports = {
     },
   },
   plugins: ["react"],
-  rules: {},
+  // Adding rules to ignore react-three-fiber jsx props
+  rules: {
+    "react/no-unknown-property": ["error", { ignore: ["args"] }],
+  },
   settings: {
     react: {
       version: "detect",
