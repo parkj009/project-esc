@@ -20,7 +20,21 @@ module.exports = {
   plugins: ["react"],
   // Adding rules to ignore react-three-fiber jsx props
   rules: {
-    "react/no-unknown-property": ["error", { ignore: ["args"] }],
+    "react/no-unknown-property": [
+      "error",
+      {
+        ignore: [
+          "args",
+          "position",
+          "skeleton",
+          "geometry",
+          "material",
+          "dispose",
+          "rotation",
+          "object",
+        ],
+      },
+    ],
   },
   settings: {
     react: {

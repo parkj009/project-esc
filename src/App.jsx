@@ -3,6 +3,7 @@ import Header from "./components/ui/Header";
 import Footer from "./components/ui/Footer";
 import Rooms from "./pages/Rooms";
 import RoomDetails from "./components/RoomDetails";
+import RoomScene from "./components/RoomScene";
 
 // Pages
 import Home from "./pages/Home";
@@ -30,6 +31,7 @@ function App() {
         <Route path="/rooms">
           <Route index element={<Rooms />} />
           <Route path=":id" element={<RoomDetails />} />
+          <Route path=":id/start" element={<RoomScene />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
