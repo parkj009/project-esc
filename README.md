@@ -26,10 +26,10 @@
 
 Project ESC was created to provide the general public an awesome browser-based game utilizing an escape room concept. It was designed using the following technology stack below:
 
-- ReactJS: JS Frontend Framework
+- ReactJS: JS Library
 - react-three-fiber: React renderer for threejs
 - Tailwind CSS: Utility-first CSS Framework
-- ViteJS: a build tool that aims to provide a faster and leaner development experience for modern web projects
+- NextJS: React framework
 - (need backend)
 
 ---
@@ -81,7 +81,7 @@ npm run build: Compiles and minifies assets
 - [react-three-fiber](https://github.com/pmndrs/react-three-fiber)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [ESLint](https://eslint.org/)
-- [ViteJS] (https://vitejs.dev/guide/)
+- [NextJS] (https://nextjs.org/learn/foundations/about-nextjs/what-is-nextjs)
 - [JSX](https://reactjs.org/docs/introducing-jsx.html)
 
 ---
