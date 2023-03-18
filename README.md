@@ -29,7 +29,7 @@ Project ESC was created to provide the general public an awesome browser-based g
 - ReactJS: JS Frontend Framework
 - react-three-fiber: React renderer for threejs
 - Tailwind CSS: Utility-first CSS Framework
-- (need dev env)
+- ViteJS: a build tool that aims to provide a faster and leaner development experience for modern web projects
 - (need backend)
 
 ---
@@ -81,6 +81,7 @@ npm run build: Compiles and minifies assets
 - [react-three-fiber](https://github.com/pmndrs/react-three-fiber)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [ESLint](https://eslint.org/)
+- [ViteJS] (https://vitejs.dev/guide/)
 - [JSX](https://reactjs.org/docs/introducing-jsx.html)
 
 ---
