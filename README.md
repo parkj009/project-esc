@@ -81,7 +81,7 @@ npm run build: Compiles and minifies assets
 - [react-three-fiber](https://github.com/pmndrs/react-three-fiber)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [ESLint](https://eslint.org/)
-- [NextJS] (https://nextjs.org/learn/foundations/about-nextjs/what-is-nextjs)
+- [NextJS](https://nextjs.org/learn/foundations/about-nextjs/what-is-nextjs)
 - [JSX](https://reactjs.org/docs/introducing-jsx.html)
 
 ---
