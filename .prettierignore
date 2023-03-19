@@ -1,5 +1,9 @@
 .github
 .yarn
 .next
+.nvmrc
+.npmrc
+.gitignore
+.eslintrc.json
 dist
 node_modules
