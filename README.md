@@ -100,4 +100,4 @@ npm run build: Compiles and minifies assets
 - Authors:
   - Grace Kim
   - James Park
-- Contributors:
+- Contributors
