@@ -46,13 +46,20 @@ Navigate to the directory where you want to set up a local dev environment. Clon
 
 ```
 npm install
-npm run lint
 npm run dev
 ```
 
 npm install: Installs the file dependencies from package.json
-npm run lint: Checks syntax, identifies issues, and enforces coding styles
 npm run serve: Compiles and hot-reloads for development
+
+---
+
+## devDependencies
+
+- prettier: an opinionated code formatter to stick with a agreed upon coding style
+- husky: a git hook that improves git commits/pushes.
+  - pre-commit: when git commit is run, `npm run lint` will be run first to identify any errors/issues within the code and will cancel the commit if it finds any.
+  - pre-push: when git push is run, `npm run build` will be run first to ensure there are no errors in building the application in a production environment. If errors are found then the push will be cancelled.
 
 ---
 
@@ -83,6 +90,8 @@ npm run build: Compiles and minifies assets
 - [ESLint](https://eslint.org/)
 - [NextJS](https://nextjs.org/learn/foundations/about-nextjs/what-is-nextjs)
 - [JSX](https://reactjs.org/docs/introducing-jsx.html)
+- [Prettier](https://prettier.io/)
+- [husky](https://github.com/typicode/husky)
 
 ---
 
