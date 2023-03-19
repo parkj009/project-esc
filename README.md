@@ -1,38 +1,104 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project ESC
+
+![GitHub last commit](https://img.shields.io/github/last-commit/parkj009/project-esc?logo=Github&style=plastic)
+![Website](https://img.shields.io/website?down_message=offline&style=plastic&up_color=green&url=https%3A%2F%2Fprojectesc.io)
+![GitHub](https://img.shields.io/github/license/parkj009/project-esc?style=plastic)
+![GitHub repo size](https://img.shields.io/github/repo-size/parkj009/project-esc?style=plastic)
+
+## Introduction
+
+**Project ESC** is a browser-based game created for the purpose of practicing ReactJS and react-three-fiber (and to have fun, of course).
+
+---
+
+## Table of contents
+
+1. [Overview](#overview)
+2. [Getting Started](#getting-started)
+3. [Testing](#testing)
+4. [Production](#production)
+5. [References](#references)
+6. [Credits](#credits)
+
+---
+
+## Overview
+
+Project ESC was created to provide the general public an awesome browser-based game utilizing an escape room concept. It was designed using the following technology stack below:
+
+- ReactJS: JS Library
+- react-three-fiber: React renderer for threejs
+- Tailwind CSS: Utility-first CSS Framework
+- NextJS: React framework
+- (need backend)
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Pre-requisites
 
-```bash
+Install [Node.js](https://nodejs.org/en/)
+
+### Project Setup
+
+Navigate to the directory where you want to set up a local dev environment. Clone this repo, cd into the folder and run the following:
+
+```
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+npm install: Installs the file dependencies from package.json
+npm run serve: Compiles and hot-reloads for development
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## devDependencies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- prettier: an opinionated code formatter to stick with a agreed upon coding style
+- husky: a git hook that improves git commits/pushes.
+  - pre-commit: when git commit is run, `npm run lint` will be run first to identify any errors/issues within the code and will cancel the commit if it finds any.
+  - pre-push: when git push is run, `npm run build` will be run first to ensure there are no errors in building the application in a production environment. If errors are found then the push will be cancelled.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## Testing
 
-To learn more about Next.js, take a look at the following resources:
+To be Added (identify what to use for unit, load, and end-to-end testing).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Production
 
-## Deploy on Vercel
+When you are ready for production, run the following:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+npm run build: Compiles and minifies assets
+
+---
+
+## References
+
+- [Node.js](https://nodejs.org/en/about/)
+- [ReactJS](https://reactjs.org/)
+- [react-three-fiber](https://github.com/pmndrs/react-three-fiber)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [ESLint](https://eslint.org/)
+- [NextJS](https://nextjs.org/learn/foundations/about-nextjs/what-is-nextjs)
+- [JSX](https://reactjs.org/docs/introducing-jsx.html)
+- [Prettier](https://prettier.io/)
+- [husky](https://github.com/typicode/husky)
+
+---
+
+## Credits
+
+- Authors:
+  - Grace Kim
+  - James Park
+  - Thomas Ouye
+- Contributors:
