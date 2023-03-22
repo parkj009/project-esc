@@ -14,3 +14,7 @@ const BaseTemplate: React.FC<IBaseTemplate> = ({ sampleTextProp }) => {
 };
 
 export default BaseTemplate;
+
+// export default function BaseTemplate({ sampleTextProp }) {
+//   return <div className={styles.container}>{sampleTextProp}</div>;
+// }
