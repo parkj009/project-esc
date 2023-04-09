@@ -5,6 +5,7 @@
 .npmrc
 .gitignore
 .eslintrc.json
+.prettierrc
 dist
 node_modules
 **/.git
